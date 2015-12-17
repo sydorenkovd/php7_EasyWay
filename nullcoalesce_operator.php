@@ -2,6 +2,9 @@
 if (isset($_POST['name']) && empty($_POST['name'])) {
     unset($_POST['name']);
 }
+/*
+ * return first not null value
+ */
 $name = $_POST['name'] ?? 'guest';
 ?>
 <!doctype html>
