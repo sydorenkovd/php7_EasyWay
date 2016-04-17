@@ -64,6 +64,33 @@ bin2hex(random_bytes(20));
 * [random_int](https://github.com/sydorenkovd/php7_EasyWay/blob/master/New%20operators%20and%20functions/random_int.php)
 * [intdiv](https://github.com/sydorenkovd/php7_EasyWay/blob/master/New%20operators%20and%20functions/intdiv_convertMetersToYards.php)
 
+##### New yield:
+
+Now we have new operator _return_, that we can use for some final value, it's actual for ending iteration. We also can use it for testing, and be able to know about correct parsing of yield.
+
+ *Also yields can return some value from other yields, in this way we can create more complicated operations that is based on simple ones.*
+
+```php
+function listA() {
+    yield 2;
+    yield 3;
+    yield 4;
+}
+
+function listB() {
+    yield 1;
+    yield from listA(); // 'listA' is working this
+    yield 5;
+    return 'success'; // final result, that we can check out later
+}
+
+foreach (listB() as $val) {
+    echo "\n $val"; // output values from 1 to 5
+}
+
+$genB()->getReturn(); // return 'success' if there are no errors
+```
+
 #### Type checking:
 
 ##### Scalar parameter hints: [Full example](https://github.com/sydorenkovd/php7_EasyWay/blob/master/Type%20checking/Holidays_compound_return.php) | [Interface for example](https://github.com/sydorenkovd/php7_EasyWay/blob/master/Type%20checking/HolidayInterface.php)
