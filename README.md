@@ -64,7 +64,7 @@ bin2hex(random_bytes(20));
 * [random_int](https://github.com/sydorenkovd/php7_EasyWay/blob/master/New%20operators%20and%20functions/random_int.php)
 * [intdiv](https://github.com/sydorenkovd/php7_EasyWay/blob/master/New%20operators%20and%20functions/intdiv_convertMetersToYards.php)
 
-##### New yield:
+##### New yield: [return operator](https://github.com/sydorenkovd/php7_EasyWay/blob/master/Classes%20and%20generators/generator_return.php) | [delegate generator](https://github.com/sydorenkovd/php7_EasyWay/blob/master/Classes%20and%20generators/delegate_generator.php)
 
 Now we have new operator _return_, that we can use for some final value, it's actual for ending iteration. We also can use it for testing, and be able to know about correct parsing of yield.
 
