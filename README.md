@@ -68,7 +68,7 @@ bin2hex(random_bytes(20));
 
 Now we have new operator _return_, that we can use for some final value, it's actual for ending iteration. We also can use it for testing, and be able to know about correct parsing of yield.
 
- *Also yields can return some value from other yields, in this way we can create more complicated operations that is based on simple ones.*
+ Also yields can return some value from other yields, in this way we can create more complicated operations that is based on simple ones.
 
 ```php
 function listA() {
@@ -79,7 +79,7 @@ function listA() {
 
 function listB() {
     yield 1;
-    yield from listA(); // 'listA' is working this
+    yield from listA(); // 'listA' is working here
     yield 5;
     return 'success'; // final result, that we can check out later
 }
