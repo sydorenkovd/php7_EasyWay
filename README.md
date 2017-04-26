@@ -5,11 +5,16 @@ For easy using new features and functionality Part 1.
 It was created for the fastest way to switch and adapt PHP world for new version.
 
 Let's change PHP world together!
+
 REQUIREMENTS
 ------------
+
 [php7_EasyWay](https://github.com/sydorenkovd/php7_EasyWay) require php 7 and php 5.6 for testing.
+
+
 How instal php 7 on your local server: :elephant:
 -------------------------------------
+
 You can upload it from [php.net](http://php.net/archive) and instal php7 manualy, have a look how: 
 * [Instal on Debian](https://www.howtoforge.com/tutorial/how-to-install-php-7-on-debian/)
 * [Install PHP 7 on Ubuntu](http://www.zimuel.it/install-php-7/)
